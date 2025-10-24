@@ -2,7 +2,27 @@
 
 Welcome to the ACM AI Workshop on Computer Vision and Image Classification!
 
-Kaggle Link: https://www.kaggle.com/t/5822d84800d7461ea402e108d8d84e61
+## 📑 Table of Contents
+- [Documentation](#-documentation)
+- [Workshop Structure](#-workshop-structure)
+- [Getting Started](#-getting-started)
+- [Competition Workflow](#-competition-workflow)
+- [Tips for Success](#-tips-for-success)
+- [Expected Performance](#-expected-performance)
+- [Troubleshooting](#-troubleshooting)
+- [Additional Resources](#-additional-resources)
+- [Getting Help](#-getting-help)
+- [Repository Contents](#-repository-contents)
+
+---
+
+## 📖 Documentation
+
+New to the workshop or need to review? Check out our comprehensive guides:
+
+- **[Setup Guide](SETUP_GUIDE.md)** - Install VSCode, Git, Python, and all dependencies
+- **[Comprehensive Review](COMPREHENSIVE_REVIEW.md)** - Complete concept explanations from the workshop
+- **[Code Walkthrough](CODE_WALKTHROUGH.md)** - Line-by-line explanation of the demo notebook
 
 ## 📚 Workshop Structure
 
@@ -17,6 +37,8 @@ In this interactive demo, you'll learn:
 
 **👉 Follow along as the instructor walks through the notebook!**
 
+**Need help understanding the code?** See the [Code Walkthrough](CODE_WALKTHROUGH.md) for detailed line-by-line explanations.
+
 ---
 
 ### Part 2: Competition - CIFAR-10 Classification (Hands-on)
@@ -30,7 +52,23 @@ Build a CNN to classify CIFAR-10 images (10 classes) and compete on Kaggle!
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
+### Prerequisites
+
+**First time setting up?** Follow our [Setup Guide](SETUP_GUIDE.md) to install:
+- VSCode (code editor)
+- Git (version control)
+- Python 3.15+ (programming language)
+- All required packages
+
+### Quick Start (If you already have Python and Git)
+
+#### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+#### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -41,7 +79,21 @@ Or manually install:
 pip install torch torchvision pandas pillow tqdm matplotlib scikit-learn scikit-image
 ```
 
-### 2. Demo (Follow Along)
+**Having installation issues?** Check the [Troubleshooting section](SETUP_GUIDE.md#troubleshooting) in the Setup Guide.
+
+#### 3. Open in VSCode
+
+```bash
+code .
+```
+
+Or manually: File → Open Folder in VSCode
+
+---
+
+### Workshop Sessions
+
+#### Demo Session (Follow Along)
 
 Open the demo notebook:
 ```bash
@@ -50,7 +102,11 @@ jupyter notebook cifar10_demo_student.ipynb
 
 The instructor will guide you through completing the code!
 
-### 3. Competition (Hands-on)
+**Confused about what's happening?**
+- During the workshop: Ask questions!
+- After the workshop: Read the [Code Walkthrough](CODE_WALKTHROUGH.md) and [Comprehensive Review](COMPREHENSIVE_REVIEW.md)
+
+#### Competition Session (Hands-on)
 
 Navigate to the competition folder:
 ```bash
@@ -220,32 +276,6 @@ Watch for signs of overfitting:
 
 ---
 
-## 📁 File Structure
-
-```
-workshop/
-├── README.md                      # This file
-├── requirements.txt               # Python dependencies
-├── cifar10_demo_student.ipynb     # Demo notebook (follow along)
-│
-└── cifar10_comp/                  # Competition folder
-    ├── cifar10_comp.ipynb         # Competition notebook (interactive)
-    ├── model.py                   # CNN architecture (modify this!)
-    ├── main.py                    # Training script (modify this!)
-    ├── kaggle_submission.py       # Generate submission
-    │
-    ├── best_model.pth             # Trained model (generated after training)
-    ├── submission.csv             # Predictions (generated before submission)
-    │
-    ├── test.csv                   # Test IDs (download from Kaggle)
-    └── test_images/               # Test images (download from Kaggle)
-        ├── 00000.png
-        ├── 00001.png
-        └── ...
-```
-
----
-
 ## 🏆 Submission Format
 
 Your `submission.csv` must have this format:
@@ -304,21 +334,36 @@ Install dependencies: `pip install -r requirements.txt`
 
 ---
 
-## 📚 Resources
+## 📚 Additional Resources
 
+### Workshop Documentation
+- **[Setup Guide](SETUP_GUIDE.md)** - Complete setup instructions for VSCode, Git, Python, and packages
+- **[Comprehensive Review](COMPREHENSIVE_REVIEW.md)** - Detailed explanations of all concepts covered
+- **[Code Walkthrough](CODE_WALKTHROUGH.md)** - Line-by-line breakdown of the demo notebook
+
+### External Resources
 - **PyTorch Tutorials:** https://pytorch.org/tutorials/
 - **CIFAR-10 Dataset:** https://www.cs.toronto.edu/~kriz/cifar.html
 - **Data Augmentation:** https://pytorch.org/vision/stable/transforms.html
 - **CNN Architectures:** https://pytorch.org/vision/stable/models.html
+- **Fast.ai Course:** https://www.fast.ai/ (practical deep learning)
+- **Stanford CS231n:** http://cs231n.stanford.edu/ (computer vision course)
 
 ---
 
 ## 🤝 Getting Help
 
+### During the Workshop
 - Ask questions during the workshop!
 - Check the Kaggle competition discussion forum
-- Review the demo notebook for examples
-- Look at `model.py` and `main.py` for code structure
+- Work with your neighbors
+
+### After the Workshop
+- **Read the guides:** [Comprehensive Review](COMPREHENSIVE_REVIEW.md) explains all concepts
+- **Understand the code:** [Code Walkthrough](CODE_WALKTHROUGH.md) breaks down every line
+- **Setup issues?** [Setup Guide](SETUP_GUIDE.md) has troubleshooting tips
+- **ACM Discord:** acmurl.com/discord
+- **Email:** contact@acmucsd.org
 
 ---
 
@@ -333,8 +378,38 @@ By the end of this workshop, you should be able to:
 ✅ Generate predictions and submit to Kaggle
 ✅ Debug common issues in model training
 
+**Don't understand everything yet?** That's normal! Review the [Comprehensive Review](COMPREHENSIVE_REVIEW.md) at your own pace.
+
+---
+
+## 📁 Repository Contents
+
+```
+workshop/
+├── README.md                           # You are here!
+├── SETUP_GUIDE.md                      # Installation and setup instructions
+├── COMPREHENSIVE_REVIEW.md             # Detailed concept explanations
+├── CODE_WALKTHROUGH.md                 # Line-by-line code breakdown
+├── requirements.txt                    # Python dependencies
+├── cifar10_demo_student.ipynb          # Demo notebook (follow along)
+│
+└── cifar10_comp/                       # Competition folder
+    ├── cifar10_comp.ipynb              # Competition notebook (interactive)
+    ├── model.py                        # CNN architecture (modify this!)
+    ├── main.py                         # Training script (modify this!)
+    ├── kaggle_submission.py            # Generate submission
+    │
+    ├── best_model.pth                  # Trained model (generated after training)
+    ├── submission.csv                  # Predictions (generated before submission)
+    │
+    ├── test.csv                        # Test IDs (download from Kaggle)
+    └── test_images/                    # Test images (download from Kaggle)
+```
+
 ---
 
 Good luck and have fun! 🚀
 
 **Remember:** The key to winning is **data augmentation** + **good architecture** + **proper training**!
+
+**Feeling lost?** Start with the [Setup Guide](SETUP_GUIDE.md), then read the [Comprehensive Review](COMPREHENSIVE_REVIEW.md) to understand the concepts!
