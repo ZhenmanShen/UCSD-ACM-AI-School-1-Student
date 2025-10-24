@@ -549,8 +549,6 @@ deactivate
 If you're still stuck:
 1. Check the [VSCode Documentation](https://code.visualstudio.com/docs)
 2. Check the [Git Documentation](https://git-scm.com/doc)
-3. Ask on the ACM Discord: acmurl.com/discord
-4. Email: contact@acmucsd.org
 
 ---
 
