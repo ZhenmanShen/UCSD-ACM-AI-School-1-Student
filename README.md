@@ -364,8 +364,6 @@ Install dependencies: `pip install -r requirements.txt`
 - **Read the guides:** [Comprehensive Review](COMPREHENSIVE_REVIEW.md) explains all concepts
 - **Understand the code:** [Code Walkthrough](CODE_WALKTHROUGH.md) breaks down every line
 - **Setup issues?** [Setup Guide](SETUP_GUIDE.md) has troubleshooting tips
-- **ACM Discord:** acmurl.com/discord
-- **Email:** contact@acmucsd.org
 
 ---
 
