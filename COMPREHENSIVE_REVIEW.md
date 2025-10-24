@@ -669,12 +669,6 @@ When the model memorizes the training data instead of learning general patterns.
 
 ## Additional Resources
 
-### Want to Learn More?
-1. **PyTorch Tutorials**: https://pytorch.org/tutorials/
-2. **Fast.ai Course**: https://www.fast.ai/ (practical deep learning)
-3. **Stanford CS231n**: http://cs231n.stanford.edu/ (computer vision course)
-4. **Papers with Code**: https://paperswithcode.com/ (latest research)
-
 ### Practice Datasets:
 1. **MNIST**: Handwritten digits (easier than CIFAR-10)
 2. **Fashion-MNIST**: Clothing items (similar difficulty to CIFAR-10)
